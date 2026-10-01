@@ -200,8 +200,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 24,
-        "padding-block-end": 18
+        "padding-block-start": 8,
+        "padding-block-end": 36
       }
     },
     "footer_utilities": {
@@ -246,9 +246,17 @@
       "settings": {
         "color_scheme": "scheme-2"
       }
+    },
+    "virello_footer": {
+      "type": "virello-footer",
+      "settings": {
+        "text": "Watches for everyday wear. Product specifics are on each product page.",
+        "color_scheme": "scheme-2"
+      }
     }
   },
   "order": [
+    "virello_footer",
     "section_jehhzd",
     "footer_utilities"
   ]
