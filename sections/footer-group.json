@@ -87,7 +87,7 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<h2>Stay on time with Virello</h2>",
+                    "text": "<h2>Notes from Virello</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -113,7 +113,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Be first to discover new arrivals, curated watch edits, and private offers.</p>",
+                    "text": "<p>Occasional notes on new arrivals. No other mail.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -151,7 +151,7 @@
                 "color_scheme": "scheme-3",
                 "border_style": "underline",
                 "border_width": 1,
-                "border_radius": 39,
+                "border_radius": 0,
                 "input_type_preset": "paragraph",
                 "style_class": "button-unstyled",
                 "display_type": "text",
