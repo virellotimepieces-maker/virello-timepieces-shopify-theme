@@ -1,0 +1,50 @@
+<section class="virello-footer color-{{ section.settings.color_scheme }}">
+  <div class="virello-footer__inner">
+    <div class="virello-footer__brand">
+      <p class="virello-footer__mark">{{ shop.name }}</p>
+      {% if section.settings.text != blank %}
+        <p>{{ section.settings.text }}</p>
+      {% endif %}
+    </div>
+    <nav class="virello-footer__nav" aria-label="Shop">
+      <p>Shop</p>
+      <a href="{{ routes.all_products_collection_url }}">All watches</a>
+      <a href="{{ routes.collections_url }}">Collections</a>
+      <a href="{{ routes.search_url }}">Search</a>
+    </nav>
+    <nav class="virello-footer__nav" aria-label="Account">
+      <p>Account</p>
+      <a href="{{ routes.account_url }}">Account</a>
+      <a href="{{ routes.cart_url }}">Cart</a>
+      {% if pages['contact'] != blank %}
+        <a href="{{ pages['contact'].url }}">Contact</a>
+      {% endif %}
+    </nav>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Virello footer",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Watches for everyday wear. Product specifics are on each product page."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Virello footer"
+    }
+  ]
+}
+{% endschema %}
